@@ -1,0 +1,15 @@
+# course data and generated prediction files (not mine to redistribute / reproducible)
+*.csv
+other_models/
+
+# notebook and python caches
+.ipynb_checkpoints/
+__pycache__/
+
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.toc
+
+.DS_Store
