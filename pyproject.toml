@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quoridor"
+version = "1.0.0"
+description = "A terminal version of the board game Quoridor for 2 or 4 players"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Radhika Singhal" }]
+keywords = ["quoridor", "board-game", "terminal", "cli"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Environment :: Console",
+    "Topic :: Games/Entertainment :: Board Games",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+quoridor = "quoridor.cli:main"
+
+[tool.setuptools]
+packages = ["quoridor"]
